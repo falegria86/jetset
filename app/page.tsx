@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import HeroSection from "@/components/hero-section"
-import DynamicHeader from "@/components/dyncamic-header"
+import DynamicHeader from "@/components/dynamic-header"
 import SocialLinks from "@/components/social-links"
 
 export default function Page() {
@@ -82,43 +82,15 @@ export default function Page() {
       <section id="banda" className="py-20 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-l from-cyan-900/20 to-purple-900/20" />
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-5xl md:text-6xl font-black mb-8">
-                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                  SOBRE NOSOTROS
-                </span>
-              </h2>
-              <p className="text-xl text-pink-300 mb-6 leading-relaxed">
-                Somos una banda tributo que revive la energía y el glamour de los años 80. Con más de 5 años de
-                experiencia, hemos conquistado escenarios por toda España interpretando los hits más icónicos de la
-                década dorada del pop.
-              </p>
-              <p className="text-lg text-cyan-300 mb-8">
-                Desde Madonna hasta Duran Duran, desde Depeche Mode hasta Cyndi Lauper, recreamos fielmente el sonido y
-                la estética que marcó una generación.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">50+</div>
-                  <div className="text-pink-300">Conciertos</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-cyan-400 mb-2">5</div>
-                  <div className="text-pink-300">Años</div>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/30 to-cyan-500/30 rounded-lg blur-xl" />
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="JETSET en concierto"
-                width={500}
-                height={400}
-                className="relative z-10 rounded-lg shadow-2xl"
-              />
-            </div>
+          <div>
+            <h2 className="text-5xl text-center md:text-6xl font-black mb-8">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                SOBRE NOSOTROS
+              </span>
+            </h2>
+            <p className="text-xl text-white mb-6 leading-relaxed">
+              Somos una banda tributo que revive la energía de los 80 y 90. Con más de 5 años en escenarios por toda España, llevamos los hits más icónicos del pop, rock y cumbias para bailar.
+            </p>
           </div>
         </div>
       </section>
