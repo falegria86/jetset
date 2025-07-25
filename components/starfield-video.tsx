@@ -6,11 +6,13 @@ export default function StarfieldVideo() {
       {/* Video de fondo con efecto starfield */}
       <iframe
         src="https://www.youtube.com/embed/UNOmaFs6KaY?autoplay=1&mute=1&loop=1&playlist=UNOmaFs6KaY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&start=0"
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-75"
+        className="absolute pointer-events-none opacity-75"
         style={{
-          width: '100vw',
-          height: '100vh',
-          transform: 'scale(1.2)', // Escalar para eliminar bordes
+          top: '50%',
+          left: '50%',
+          width: 'max(100vw, 177.78vh)', // Mantiene aspect ratio 16:9, cubre toda la pantalla
+          height: 'max(100vh, 56.25vw)', // Aspect ratio inverso para altura
+          transform: 'translate(-50%, -50%)', // Centra el video
           objectFit: 'cover'
         }}
         allow="autoplay; encrypted-media"
