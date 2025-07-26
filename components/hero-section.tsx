@@ -41,10 +41,6 @@ export default function HeroSection() {
                         priority
                     />
                 </div>
-
-                <p className="text-xl md:text-2xl mb-8 text-white font-bold tracking-wider">
-                    🎵 LOS MEJORES HITS EN VIVO 🎵
-                </p>
             </div>
         </section>
     )
